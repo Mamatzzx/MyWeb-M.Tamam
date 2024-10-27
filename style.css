@@ -1,0 +1,282 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.logo {
+
+    animation: showUp 0.7s forwards;
+
+    animation-delay: 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.logo span {
+    color: #00ffff;
+}
+
+section.hero {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+section#about {
+  background-color: #ffffff; 
+  padding: 40px 0;
+  color: #4a4a4a;
+}
+
+
+section#projects {
+  background-color: #f0f4f8; 
+  padding: 40px 0;
+  color: #333333; 
+}
+
+
+section#contact {
+  background-color: #e2e8f0;
+  padding: 40px 0;
+  color: #333333;
+}
+
+
+footer {
+  background-color: #2d3748;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #a0aec0; 
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000000;
+}
+}
+h1, h2, h3 {
+    color: #1C3A5D; 
+}
+.bg-primary {
+    background-color: #1C3A5D; 
+}
+.text-primary {
+    color: #1C3A5D;
+}
+.text-secondary {
+    color: #FFC857; 
+}
+.bg-secondary {
+    background-color: #FFC857;
+}
+
+.navbar, .card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn {
+    background-color: #FFC857;
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #D9A23E;
+}
+
+
+.hero {
+    background-color: #1C3A5D;
+    color: #FFFFFF;
+}
+.hero h2 {
+    color: #FFC857;
+}
+.hero p {
+    color: #E0E4E9;
+}
+
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E4E9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+footer a {
+    color: #FFC857;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #E0E4E9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.dark-mode .navbar, .dark-mode .card, .dark-mode footer {
+  background-color: #2a2a2a;
+}
+
+.role-text {
+    color: #00ffff;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    margin-top: 4px;
+    overflow: hidden;
+
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.role-text span {
+    animation: switchRole 3s ease-in-out alternate infinite;
+}
+
+
+@keyframes showUp {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes showFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showRight {
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes showHeight80px {
+    to {
+        height: 80px;
+    }
+}
+
+@keyframes bouncing {
+    from {
+        transform: translateY(0px);
+    } to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes switchRole {
+    0% {
+        transform: translateY(0px);
+    } 20% {
+        transform: translateY(0px);
+    } 40% {
+        transform: translateY(-36px);
+    } 60% {
+        transform: translateY(-36px);
+    } 80% {
+        transform: translateY(-72px);
+    } 100% {
+        transform: translateY(-72px);
+    }
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.dark-mode {
+  --bg-color: #1e1e2f;
+  --text-color: #f0f0f0;
+  --primary-color: #d4af37; 
+}
+
+.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #0f1011; 
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+a i {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+a:hover i {
+  color: #e1306c;
+}

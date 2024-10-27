@@ -1,0 +1,36 @@
+{
+  "about": "I am a passionate web developer with expertise in front-end technologies. I enjoy creating interactive and dynamic user experiences.",
+  "projects": [
+    {
+      "title": "Personal Website",
+      "description": "A responsive personal website built with HTML, CSS, and JavaScript.",
+      "link": "#"
+    },
+    {
+      "title": "To-do List App",
+      "description": "A simple to-do list application using vanilla JavaScript.",
+      "link": "#"
+    },
+    {
+      "title": "E-commerce Site",
+      "description": "A prototype e-commerce site created with Bootstrap.",
+      "link": "#"
+    }
+  ],
+  "contact": {
+    "email": "your-email@example.com"
+  }
+}
+{
+  ...
+  "testimonials": [
+    {
+      "name": "John Doe",
+      "feedback": "Great work! Very satisfied with the project."
+    },
+    {
+      "name": "Jane Smith",
+      "feedback": "Professional and timely delivery. Highly recommend!"
+    }
+  ]
+}
